@@ -1,0 +1,138 @@
+body {
+  font-family: "Noto Serif", serif;
+  background: #fcb5b5;
+  a {
+    text-decoration: underline;
+
+    &:link {
+      color: black;
+    }
+
+    &:visited {
+      color: black;
+    }
+  }
+}
+
+#header {
+  display: flex;
+  flex-direction: column;
+  align-items: space-between;
+  #logo {
+    display: flex;
+    align-items: center;
+
+    #header-img {
+      width: 50px;
+      height: 50px;
+    }
+
+    #logo-title {
+      padding-left: 15px;
+      font-size: 5vw;
+    }
+  }
+
+  #nav-bar {
+    display: flex;
+    justify-content: space-around;
+    list-style-type: none;
+    margin-top: 8vw;
+    @media screen and (min-width: 667px) {
+      flex-direction: row;
+    }
+  }
+}
+
+#main {
+  #sections-info {
+    display: flex;
+    flex-direction: column;
+    margin: 5vw auto;
+    text-align: center;
+
+    .section-copy {
+      font-family: "Crimson Text", serif;
+      width: 83vw;
+      margin: 0 auto;
+    }
+    #plans-container {
+      display: flex;
+      align-items: center;
+      justify-content: space-around;
+      .plans {
+        width: 100px;
+        height: 100px;
+        background: #cccccc;
+        position: relative;
+        h5 {
+          position: absolute;
+          bottom: 0;
+          margin: 0;
+
+          display: block;
+          background: #ff0;
+          width: 100%;
+        }
+      }
+    }
+
+    #video {
+      margin: 12vw auto 0 auto;
+      display: block;
+      width: 300px;
+      height: 200px;
+    }
+
+    section:nth-child(2),
+    section:last-child {
+      margin-top: 4vw;
+    }
+  }
+
+  #form-container {
+    text-align: center;
+    margin-top: 2vw;
+  }
+}
+
+#footer {
+  text-align: center;
+}
+
+@media screen and (min-width: 667px) {
+  #header {
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    #logo {
+      #header-img {
+        width: 50px;
+        height: 50px;
+      }
+    }
+    #nav-bar {
+      margin-top: 0;
+      justify-content: space-around;
+    }
+  }
+  #main {
+    #sections-info {
+      #plans-container {
+        width: 75vw;
+        margin: auto;
+        .plans {
+          width: 200px;
+          height: 200px;
+        }
+      }
+      .section-copy {
+        width: 65vw;
+      }
+    }
+    #form-container {
+      width: 500px;
+      height: 315px;
+    }
+  }
+}
