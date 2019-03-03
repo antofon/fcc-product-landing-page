@@ -26,7 +26,7 @@ body {
     justify-content: space-around;
     list-style-type: none;
     margin-top: 8vw; }
-    @media screen and (min-width: 667px) {
+    @media screen and (min-width: 768px) {
       #header #nav-bar {
         flex-direction: row; } }
 
@@ -35,17 +35,20 @@ body {
   flex-direction: column;
   margin: 5vw auto;
   text-align: center; }
+  #main #sections-info .section-title {
+    font-size: 5.5vw; }
   #main #sections-info .section-copy {
     font-family: "Crimson Text", serif;
     width: 83vw;
-    margin: 0 auto; }
+    margin: 0 auto;
+    font-size: 4vw; }
   #main #sections-info #plans-container {
     display: flex;
     align-items: center;
     justify-content: space-around; }
     #main #sections-info #plans-container .plans {
-      width: 100px;
-      height: 100px;
+      width: 35vw;
+      height: 35vw;
       background: #cccccc;
       position: relative; }
       #main #sections-info #plans-container .plans h5 {
@@ -53,8 +56,12 @@ body {
         bottom: 0;
         margin: 0;
         display: block;
-        background: #ff0;
-        width: 100%; }
+        background: #916953;
+        color: #fff;
+        width: 100%;
+        font-family: "Crimson Text", serif;
+        font-weight: 100;
+        font-size: 4vw; }
   #main #sections-info #video {
     margin: 12vw auto 0 auto;
     display: block;
@@ -70,7 +77,7 @@ body {
 #footer {
   text-align: center; }
 
-@media screen and (min-width: 667px) {
+@media screen and (min-width: 768px) {
   #header {
     flex-direction: row;
     align-items: center;
