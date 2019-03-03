@@ -2,12 +2,13 @@
 
 <html>
   <head>
+      <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Solace Crystals: Healing Properties to Explore</title>
     <link
       href="https://fonts.googleapis.com/css?family=Crimson+Text|Noto+Serif"
       rel="stylesheet"
     />
-    <link rel="stylesheet" type="text/css" href="style.css" />
+    <link rel="stylesheet" type="text/css" href="styles.css" />
     <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
   </head>
 
@@ -15,35 +16,42 @@
     <header id="header">
       <div id="logo">
         <img
-          src="./crystals.jpg"
+          src="https://res.cloudinary.com/antofon/image/upload/v1551640593/crystals_ba8ome.jpg"
           alt="Logo image of crystals"
           id="header-img"
           style="border-radius: 50%"
-          height="70"
-          width="70"
+         
         />
 
-        <div class="logo-title">Solace Crystals</div>
+        <div id="logo-title">Solace Crystals</div>
       </div>
       <nav id="nav-bar">
         <li><a href="#about" class="nav-link">About</a></li>
         <li><a href="#pricing" class="nav-link">Pricing</a></li>
-        <li><a href="#video" class="nav-link">Video</a></li>
+        <li><a href="#intro-video" class="nav-link">Video</a></li>
       </nav>
     </header>
 
-    <main>
+    <main id="main">
+      <div id="sections-info">
       <section>
-        <h2 id="section-title">About</h2>
+        <h2 id="about" class="section-title">About</h2>
+        <p class="section-copy">
+Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis dolor eros, posuere eget lobortis id, sagittis nec risus. Donec congue aliquet nisi, eu tincidunt nulla blandit id. Sed quis auctor lacus. Sed pretium auctor odio, lacinia dictum odio consectetur eget. Aenean in turpis elit. Nam nisl quam, fringilla et iaculis a, cursus et magna.</p>
       </section>
       <section>
-        <h2 id="section-title">Pricing</h2>
+        <h2 id="pricing" class="section-title">Pricing</h2>
+        <section id="plans-container">
+        <div class="plans"id="basic-plan"><h5>Basic</h5></div>
+        <div class="plans"id="premium-plan"><h5>Premium</h5></div>
+        </section>
       </section>
       <section>
-        <h2 id="section-title">Learn the Basics</h2>
-        <iframe
-          width="500"
-          height="315"
+        <h2 id="intro-video" class="section-title">Learn the Basics</h2>
+        <p class="section-copy">
+Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis dolor eros, posuere eget lobortis id, sagittis nec risus. Donec congue aliquet nisi, eu tincidunt nulla blandit id. Sed quis auctor lacus. Sed pretium auctor odio, lacinia dictum odio consectetur eget. Aenean in turpis elit. Nam nisl quam, fringilla et iaculis a, cursus et magna.</p>
+<iframe
+          
           src="https://www.youtube.com/embed/dlZtBkwfIPc"
           frameborder="0"
           allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
@@ -51,12 +59,14 @@
           id="video"
         ></iframe>
       </section>
-      <section>
-        <form action="" id="form"><input type="text" name="getting-started"/><input type="button" value="Sign up for Newsletter">
+</div>
+        
+      <section id="form-container">
+        <form action="https://www.freecodecamp.com/email-submit" id="form"><input placeholder="Email address" type="email" name="email" id="email"/><input type="submit" value="Sign up for Newsletter" id="submit">
       </section>
     </main>
 
-    <footer>
+    <footer id="footer">
       <small
         ><a
           href="https://www.etsy.com/listing/491749190/11-pcs-healing-crystals-and-stones"
