@@ -102,6 +102,7 @@ body {
       #header #logo #logo-title {
         font-size: 3.5vw; }
     #header #nav-bar ul {
+      padding-right: 50px;
       margin-top: 0;
       flex-direction: row;
       justify-content: space-around; }
