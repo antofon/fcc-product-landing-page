@@ -1,17 +1,22 @@
 body {
   font-family: "Noto Serif", serif;
-  background: #fcb5b5; }
+  background: #fcb5b5;
+  margin: 0;
+  padding: 0; }
   body a {
     text-decoration: underline; }
     body a:link {
-      color: black; }
+      color: #fff; }
     body a:visited {
-      color: black; }
+      color: #fff; }
 
 #header {
   display: flex;
   flex-direction: column;
-  align-items: space-between; }
+  align-items: space-between;
+  background: #cf8e80;
+  color: #fff;
+  padding: 0 15px 10px 15px; }
   #header #logo {
     display: flex;
     align-items: center; }
@@ -21,14 +26,13 @@ body {
     #header #logo #logo-title {
       padding-left: 15px;
       font-size: 5vw; }
-  #header #nav-bar {
+  #header #nav-bar ul {
     display: flex;
     justify-content: space-around;
     list-style-type: none;
-    margin-top: 8vw; }
-    @media screen and (min-width: 768px) {
-      #header #nav-bar {
-        flex-direction: row; } }
+    margin-top: 8vw;
+    margin-bottom: 0;
+    padding-left: 0; }
 
 #main #sections-info {
   display: flex;
@@ -75,19 +79,31 @@ body {
   margin-top: 2vw; }
 
 #footer {
-  text-align: center; }
+  text-align: center;
+  padding-top: 15px; }
+  #footer small a:link {
+    color: #000; }
+  #footer small a:visited {
+    color: #000; }
 
 @media screen and (min-width: 768px) {
   #header {
     flex-direction: row;
     align-items: center;
     justify-content: space-between; }
-    #header #logo #header-img {
-      width: 50px;
-      height: 50px; }
-    #header #nav-bar {
+    #header #logo {
+      padding-top: 12px; }
+      #header #logo #header-img {
+        width: 50px;
+        height: 50px; }
+      #header #logo #logo-title {
+        font-size: 3.5vw; }
+    #header #nav-bar ul {
       margin-top: 0;
+      flex-direction: row;
       justify-content: space-around; }
+      #header #nav-bar ul .nav-link {
+        margin-left: 50px; }
 
   #main #sections-info #plans-container {
     width: 75vw;
@@ -95,10 +111,49 @@ body {
     #main #sections-info #plans-container .plans {
       width: 200px;
       height: 200px; }
+      #main #sections-info #plans-container .plans h5 {
+        font-size: 2.5vw; }
+  #main #sections-info .section-title {
+    font-size: 3.5vw; }
   #main #sections-info .section-copy {
-    width: 65vw; }
-  #main #form-container {
+    width: 65vw;
+    font-size: 3vw; }
+  #main #sections-info #video {
     width: 500px;
-    height: 315px; } }
+    height: 315px; }
+
+  #footer {
+    text-align: right; } }
+@media screen and (min-width: 1024px) {
+  #header #logo #header-img {
+    width: 60px;
+    height: 60px; }
+  #header #logo #logo-title {
+    font-size: 30px; }
+
+  #main #sections-info {
+    margin: 50px auto; }
+    #main #sections-info #plans-container {
+      width: 750px;
+      margin: auto; }
+      #main #sections-info #plans-container .plans {
+        width: 200px;
+        height: 200px; }
+        #main #sections-info #plans-container .plans h5 {
+          font-size: 22px; }
+    #main #sections-info .section-title {
+      font-size: 30px; }
+    #main #sections-info .section-copy {
+      width: 650px;
+      font-size: 24px; }
+    #main #sections-info #video {
+      width: 500px;
+      height: 315px;
+      margin: 50px auto 0 auto; }
+    #main #sections-info section:nth-child(2),
+    #main #sections-info section:last-child {
+      margin-top: 40px; }
+  #main #form-container {
+    margin-top: 20px; } }
 
 /*# sourceMappingURL=styles.css.map */
