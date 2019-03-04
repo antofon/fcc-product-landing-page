@@ -57,7 +57,8 @@ body {
       width: 35vw;
       height: 35vw;
       background: #cccccc;
-      position: relative; }
+      position: relative;
+      z-index: -1; }
       #main #sections-info #plans-container .plans h5 {
         position: absolute;
         bottom: 0;
