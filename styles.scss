@@ -24,6 +24,9 @@ body {
   background: #cf8e80;
   color: #fff;
   padding: 0 15px 10px 15px;
+  top: 0;
+  position: fixed;
+  width: 100%;
   #logo {
     display: flex;
     align-items: center;
@@ -55,7 +58,7 @@ body {
   #sections-info {
     display: flex;
     flex-direction: column;
-    margin: 5vw auto;
+    margin: 22vw auto;
     text-align: center;
 
     .section-title {
@@ -160,6 +163,7 @@ body {
   }
   #main {
     #sections-info {
+      margin: 10vw auto;
       #plans-container {
         width: 75vw;
         margin: auto;
@@ -210,7 +214,7 @@ body {
 
   #main {
     #sections-info {
-      margin: 50px auto;
+      margin: 100px auto;
       #plans-container {
         width: 750px;
         margin: auto;
